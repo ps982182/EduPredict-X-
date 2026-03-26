@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: white;
+}
+
+.container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+/* GLASS CARD */
+.card {
+  backdrop-filter: blur(15px);
+  background: rgba(255,255,255,0.1);
+  padding: 25px;
+  border-radius: 20px;
+  width: 350px;
+  margin: 20px auto;
+  box-shadow: 0px 10px 40px rgba(0,0,0,0.4);
+}
+
+/* SLIDERS */
+.slider {
+  margin: 15px 0;
+}
+
+.slider label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.slider input {
+  width: 100%;
+}
+
+/* BUTTON */
+button {
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: #6c63ff;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #5548c8;
+}
+
+/* RESULT */
+.result {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.high-risk {
+  color: #ff4d4d;
+}
+
+.safe {
+  color: #00ff9c;
+}
+
+/* BOX */
+.box {
+  margin-top: 15px;
+  text-align: left;
+}
+
+li {
+  margin: 8px 0;
+}
