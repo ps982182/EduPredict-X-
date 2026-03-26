@@ -2,8 +2,16 @@ from fastapi import FastAPI
 import joblib
 import pandas as pd
 import shap
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # allow all (for development)
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Load model & scaler
 model = joblib.load("model.pkl")
